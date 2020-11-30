@@ -1,0 +1,28 @@
+.first-treatment-essence {
+    padding: 130px 0 200px;
+    align-items: flex-start;
+    @include laptop {
+        padding: 40px 0;
+    }
+
+    &__text {
+        max-width: 430px;
+    }
+
+    &__img {
+        position: absolute;
+        top: -310px;
+        @include laptop {
+            top: -100px;
+        }
+        @include phones-medium {
+            position: static;
+        }
+        
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+    
+}

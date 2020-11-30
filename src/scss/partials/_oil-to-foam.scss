@@ -1,0 +1,29 @@
+.oil-to-foam {
+    padding: 90px 0 30px;
+    @include laptop {
+        padding: 40px 0;
+    }
+
+    .section-part__item_text {
+        max-width: 600px;
+        padding-left: 120px;
+        @include tablets {
+            padding-left: 25px;
+        }
+
+        p {
+            margin-bottom: 8px;
+        }
+    }
+
+    .oil-to-foam__img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        @include tablets {
+            position: static;
+            width: 80%;
+            margin: 20px auto 0;
+        }
+    }
+}

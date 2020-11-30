@@ -1,0 +1,21 @@
+.ls-banner {
+    width: 100%;
+    height: 400px;
+    background: url(../img/top-banner.png) 50% 0 fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    @include laptop {
+        height: 300px;
+        background-attachment: initial;
+    }
+
+    @include phones-medium {
+        height: 120px;
+    }
+    
+
+    &__img {
+        width: 100%;
+    }
+}

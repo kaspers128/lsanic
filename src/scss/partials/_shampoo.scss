@@ -1,0 +1,87 @@
+.shampoo {
+    padding: 90px 0 170px;
+    text-align: center;
+    @include laptop {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        span {
+            background: url(../img/icon_shampoo.png) no-repeat 0 0;
+            background-size: 100%;
+            width: 85px;
+            height: 125px;
+            display: block;
+            margin: 20px auto 15px;
+        }
+    }
+
+    .ls-bold {
+        margin: 25px 0 15px;
+    }
+
+    &-products {
+        margin-top: 85px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        @include phones-medium {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            @include phones-medium {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        &__item:first-child,
+        &__item:last-child {
+            margin-top: 100px;
+            @include phones-medium {
+                margin-top: 0;
+            }
+        }
+
+        &__item_green {
+            a {
+                color: #788938;
+            }
+            
+        }
+        &__item_brown {
+            a {
+                color: #6a3f28;
+            }
+            
+        }
+
+        &__item_blue {
+            a {
+                color: #3796b7;
+            }
+            
+        }
+        &__item_cream {
+            a {
+                color: #a5886d;
+            }
+            
+        }
+
+        &__top {
+            margin-bottom: 30px;
+
+            img {
+                display: block;
+            }
+        }
+        
+        &__name {
+            font-size: 19px;
+            font-weight: bold;
+            font-family: $ffBold;
+        }
+    }
+}

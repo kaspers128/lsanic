@@ -1,0 +1,19 @@
+@import './style';
+
+@import './partials/variables';// файл с переменными
+@import './partials/fonts'; // файл с шрифтами
+@import './partials/media-mixin'; // mixin для адаптации
+@import './partials/reset'; // сбрасываем стили по умолчанию
+@import './partials/lib'; // библиотека для сайта, стили кнопок, форм и тд
+@import './partials/ls-banner';
+@import './partials/ls-first';
+@import './partials/oil-to-foam';
+@import './partials/oil-product';
+@import './partials/how-to-use';
+@import './partials/first-treatment-essence';
+@import './partials/ls-products';
+@import './partials/vline-face-mask';
+@import './partials/action';
+@import './partials/banner2';
+@import './partials/shampoo';
+@import './partials/products';

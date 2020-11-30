@@ -1,0 +1,81 @@
+.oil-product {
+    padding: 80px 0;
+    @include laptop {
+        padding: 40px 0 15px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: flex-start;
+        justify-self: flex-start;
+        @include phones-medium {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        flex: 0 0 50%;
+        padding: 0 10px;
+        @include phones-medium {
+            margin-bottom: 40px;
+        }
+    }
+    
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 70px;
+    }
+
+    &__img {
+        margin-right: 15px;
+    }
+
+    &__desc {
+        padding-right: 40px;
+        font-size: 16px;
+        @include phones-medium {
+            padding-right: 0;
+        }
+
+        p {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__anons {
+        min-height: 110px;
+    }
+
+    &__bottom {
+        
+        .text-selected {
+            display: block;
+        }
+
+        p{
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 20px;
+
+            li {
+                position: relative;
+                padding-left: 20px;
+                line-height: 1;
+                margin-bottom: 8px;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                }
+            }
+        }
+    }
+
+}

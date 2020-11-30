@@ -1,0 +1,29 @@
+.ls-first {
+    padding: 130px 0 80px;
+    text-align: center;
+    @include laptop {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        span {
+            background: url(../img/icon_ls-first.png) no-repeat 0 0;
+            background-size: 100%;
+            width: 90px;
+            height: 130px;
+            display: block;
+            margin: 20px auto 15px;
+        }
+    }
+
+    .subtitle {
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+
+}

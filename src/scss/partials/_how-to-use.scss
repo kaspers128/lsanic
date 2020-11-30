@@ -1,0 +1,52 @@
+.how-to-use {
+
+    padding-bottom: 235px;
+    @include laptop {
+        padding: 0 0 75px;
+    }
+
+    .section-title {
+        margin-bottom: 55px;
+        @include laptop {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        @include phones-medium {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    &__item {
+        width: 270px;
+        @include phones-medium {
+            width: 50%;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+    }
+
+    &__text {
+        margin-top: 55px;
+        margin-bottom: 12px;
+    }
+
+    &__icon {
+        height: 200px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .text-select {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+}

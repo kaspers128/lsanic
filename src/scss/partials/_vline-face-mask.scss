@@ -1,0 +1,58 @@
+.vline-face-mask {
+    text-align: center;
+    padding: 20px 0 0;
+    align-items: stretch;
+    background: rgb(252,252,252);
+    background: linear-gradient(0deg, #e6e5ed 0%, #edecf2 68%, #f6f6f8 100%);
+    @include tablets {
+        align-items: flex-start;
+    }
+
+    .section-part__item_text {
+        max-width: 900px;
+    }
+
+    .section-title {
+        padding-top: 100px;
+        @include tablets {
+            padding-top: 30px;
+        }
+
+        span {
+            background: url(../img/icon_vline-face-mask.png) no-repeat 0 0;
+            background-size: 100%;
+            width: 161px;
+            height: 59px;
+            display: block;
+            margin: 45px auto 30px;
+        }
+    }
+
+    .ulstyle3 {
+        p {
+            font-size: 21px;
+
+            @include desktop-normal {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__mini-img {
+        max-width: 80%;
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include laptop {
+            position: static;
+            margin: 20px auto 0;
+            transform: translateY(15%);
+        }
+    }
+
+    .ls-bold {
+        margin: 35px 0;
+        text-transform: uppercase;
+    }
+}

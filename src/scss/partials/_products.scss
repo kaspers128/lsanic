@@ -1,0 +1,110 @@
+.products {
+
+    padding-bottom: 150px;
+    @include laptop {
+        padding-bottom: 40px;
+    }
+
+    &__item {
+        align-items: flex-start;
+    }
+
+    &__item_right {
+
+        .products__img-block:before {
+            left: 0;
+            width: 20%;
+            right: auto;
+        }
+    }
+
+    .section-part__item_text{
+        padding-top: 100px;
+        @include phones-medium {
+            padding-top: 0;
+            order: 2;
+        }
+    }
+    
+
+    .section-part__item_img {
+
+        &:before{
+            content: '';
+            width: 100%;
+            height: 400px;
+            display: block;
+            background: #657330;
+            position: absolute;
+            z-index: -1;
+            top: 25px;
+        }
+    }
+
+    &__item_green {
+        .section-part__item_img {
+            &:before{
+                background: #657330;
+            }
+        } 
+    }
+    &__item_brown {
+        .section-part__item_img {
+            &:before{
+                background: #6a3f28;
+            }
+        }
+    }
+    &__item_blue {
+        .section-part__item_img {
+            &:before{
+                background: #3796b7;
+            }
+        }
+    }
+    &__item_cream {
+        .section-part__item_img {
+            &:before{
+                background: #a5886d;
+            }
+        }
+    }
+
+    &__name {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 17px;
+        margin-bottom: 15px;
+        max-width: 380px;
+    }
+
+    &__subtitle {
+        font-weight: bold;
+    }
+
+    &__img-block {
+        position: relative;
+
+        @include phones-medium {
+            margin-bottom: 30px;
+        }
+
+        /*&:before {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 100%;
+            right: 0;
+            background: #fff;
+        }*/
+
+        img {
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}

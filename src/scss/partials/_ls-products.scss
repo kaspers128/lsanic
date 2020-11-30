@@ -1,0 +1,6 @@
+.ls-products {
+    padding: 80px 0 150px;
+    @include phones-medium {
+        padding: 40px 0;
+    }
+}

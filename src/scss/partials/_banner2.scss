@@ -1,0 +1,8 @@
+.banner2 {
+    background: #b9b9b7;
+    border-top: 10px solid #9b7b61;
+
+    @include phones-medium {
+        padding: 20px 20px 0;
+    }
+}
